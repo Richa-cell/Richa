@@ -1,0 +1,90 @@
+{
+  "id": "675daa2c-d11d-48e6-bd30-30e7d39fd008",
+  "version": "2.0",
+  "name": "Topssite",
+  "url": "https://www.tops-int.com/",
+  "tests": [{
+    "id": "07dbd2ad-91f5-47c6-8daa-64ef7f649bc9",
+    "name": "Test_tops",
+    "commands": [{
+      "id": "63857791-c581-4e24-b687-e9ad3dabffed",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.tops-int.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fba30b7-1fb2-4e5b-9b23-8f83d13ab8c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5abc6f7d-6dfc-4f13-82ed-47647bbc39f7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav-link > .fa-solid",
+      "targets": [
+        ["css=.nav-link > .fa-solid", "css:finder"],
+        ["xpath=//div[@id='navbarNav']/ul/li[6]/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18670c2c-0965-4510-bb38-f67e8e6b6ee1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-link > .fa-solid",
+      "targets": [
+        ["css=.nav-link > .fa-solid", "css:finder"],
+        ["xpath=//div[@id='navbarNav']/ul/li[6]/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a35f352c-d337-4b95-a4a0-1761bdafe651",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.nav-link > .fa-solid",
+      "targets": [
+        ["css=.nav-link > .fa-solid", "css:finder"],
+        ["xpath=//div[@id='navbarNav']/ul/li[6]/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd6e3d51-2845-479a-bb8b-c3f5205cd4ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact us",
+      "targets": [
+        ["linkText=Contact us", "linkText"],
+        ["css=.dropdown-menu-end > li:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[6]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.tops-int.com/contact-us')])[2]", "xpath:href"],
+        ["xpath=//li[6]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7c22133-50e2-4e5d-aa1b-663c243aec46",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8d271191-923a-4e19-9601-e3fae8530631",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07dbd2ad-91f5-47c6-8daa-64ef7f649bc9"]
+  }],
+  "urls": ["https://www.tops-int.com/"],
+  "plugins": []
+}
